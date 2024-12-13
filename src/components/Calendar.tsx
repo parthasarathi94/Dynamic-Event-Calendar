@@ -39,8 +39,6 @@ export function Calendar({ currentDate, events, onPrevMonth, onNextMonth, onDayC
 
   const generateCalendarDays = () => {
     const days = []
-    const previousMonth = new Date(year, month - 1, 1)
-    const nextMonth = new Date(year, month + 1, 1)
 
     // Previous month's days
     for (let i = firstDayOfMonth - 1; i >= 0; i--) {
